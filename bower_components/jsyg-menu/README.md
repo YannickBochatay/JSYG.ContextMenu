@@ -1,19 +1,19 @@
-# JSYG.ContextMenu
-ContextMenu plugin originally designed for [JSYG framework](https://github.com/YannickBochatay/JSYG), but it works as well as a jQuery plugin.
+# JSYG.Menu
+Menu plugin originally designed for [JSYG framework](https://github.com/YannickBochatay/JSYG), but it works as well as a jQuery plugin.
 Fits well with Bootstrap.
 
 ##### Demo
-[http://yannickbochatay.github.io/JSYG.ContextMenu/](http://yannickbochatay.github.io/JSYG.ContextMenu/)
+[http://yannickbochatay.github.io/JSYG.Menu/](http://yannickbochatay.github.io/JSYG.Menu/)
 
 ##### Installation
 ```shell
-bower install jsyg-contextmenu
+bower install jsyg-menu
 ```
 
 ##### Example
 ```javascript
 //basic Menu
-$('#divElement').contextMenu([{
+$('#ulElement').jMenu([{
     text:"element 1",
     icon:"fa fa-modx",
     action:function() {
@@ -25,10 +25,11 @@ $('#divElement').contextMenu([{
     action:function() {
         alert("click on element 2");
     }
-}]);
+}])
+.jMenu("show");
 
 //advanced Menu
-$('#divElement').contextMenu([{
+$('#ulElement').jMenu([{
     text:"simple element",
     icon:"fa fa-modx",
     action:function() {
@@ -94,5 +95,6 @@ $('#divElement').contextMenu([{
     action:function(e,val) {
         alert("checkbox is "+ (val ? '' : 'un') + "checked")
     }
-}]);
+}])
+.jMenu("show");
 ```
