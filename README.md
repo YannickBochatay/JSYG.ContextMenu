@@ -7,8 +7,9 @@ Fits well with Bootstrap.
 
 ##### Installation
 ```shell
-bower install jsyg-contextmenu
+npm install jsyg-contextmenu
 ```
+You can also install it from bower.
 
 ##### Example
 ```javascript

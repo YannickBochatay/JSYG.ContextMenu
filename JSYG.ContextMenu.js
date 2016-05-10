@@ -3,7 +3,12 @@
 
 (function(root,factory) {
     
-    if (typeof define != "undefined" && define.amd) define("jsyg-contextmenu",["jquery","jsyg-menu"],factory);
+    if (typeof module == "object" && typeof module.exports == "object") {
+      module.exports = factory( require("jquery"), require("jsyg-menu") );
+    }
+    else if (typeof define != "undefined" && define.amd) {
+      define("jsyg-contextmenu",["jquery","jsyg-menu"],factory);
+    }
     else if (typeof jQuery != "undefined") {
         
         if (typeof JSYG!= "undefined" && typeof JSYG.Menu != "undefined") factory(jQuery,JSYG.Menu);
