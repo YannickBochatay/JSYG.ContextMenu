@@ -1,6 +1,6 @@
 {
   "name": "jsyg-contextmenu",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "context menu for jsyg framework or standalone with jQuery",
   "main": "JSYG.ContextMenu.js",
   "directories": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/YannickBochatay/JSYG.ContextMenu#readme",
   "dependencies": {
-    "jsyg-menu": "^0.4.3"
+    "jsyg-menu": ">0.0.0"
   },
   "devDependencies": {
     "bootstrap": "^3.3.6",
